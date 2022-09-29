@@ -1,0 +1,43 @@
+.titulo {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.login{
+    background-color: white;
+    width: 350px;
+    height: auto;
+    border-radius: 20px;
+}
+
+body.paginas {
+    background-image: url("img/coffee-header.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+body.fundologin {
+    background-image: url("img/coffee-header.png")  no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+.cafe{
+    /* font-family: 'Reem Kufi Ink', sans-serif; */
+    font-family: 'Amiri Quran', serif;
+    font-family: 'Reem Kufi Ink', sans-serif;
+}
+
+
+.table{
+    border: 1px black solid;
+    border-radius: 10px;
+    background-color: white;
+}
