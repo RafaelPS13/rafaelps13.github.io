@@ -140,7 +140,7 @@
                             <select name="categorias" id="categorias">
                             <?php
 
-                                $sql = "SELECT descricao_categoria FROM categorias";
+                                $sql = "SELECT descricao_categoria FROM CATEGORIAS";
                                 $result = mysqli_query($conn, $sql);
 
                                 if (mysqli_num_rows($result) > 0) {
@@ -171,7 +171,7 @@
                             <select name="categorias" id="categorias">
                             <?php
 
-                                $sql = "SELECT descricao_categoria FROM categorias";
+                                $sql = "SELECT descricao_categoria FROM CATEGORIAS";
                                 $result = mysqli_query($conn, $sql);
 
                                 if (mysqli_num_rows($result) > 0) {
@@ -224,7 +224,7 @@
                  
                     <?php
                         include('dados.php');
-                        $sql = "SELECT descricao_produto,v_unit_produto,categoria_produto FROM produtos";
+                        $sql = "SELECT descricao_produto,v_unit_produto,categoria_produto FROM PRODUTOS";
                         $result = mysqli_query($conn, $sql);
                         
                         if (mysqli_num_rows($result) > 0) {
