@@ -13,7 +13,26 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     
+    <style>
+        body.paginas {
+            background-image: url("img/coffe22.jpg") ;  
+        }
+        .logo-navbar{
+            width:50px;
+        }
+        .titulo {
+            margin-top: 60px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
 
+        .cafe{
+            /* font-family: 'Reem Kufi Ink', sans-serif; */
+            font-family: 'Amiri Quran', serif;
+            font-family: 'Reem Kufi Ink', sans-serif;
+            margin-top:10px;
+        }
+    </style>
 </head>
 <body class="paginas">
     <?php
@@ -320,27 +339,6 @@
 
     </script>
 
-<style>
-  body.paginas {
-    background-image: url("img/coffe22.jpg") ;  
-}
-.logo-navbar{
-    width:50px;
-}
-.titulo {
-    margin-top: 60px;
-    margin-bottom: 30px;
-    text-align: center;
-}
-
-.cafe{
-    /* font-family: 'Reem Kufi Ink', sans-serif; */
-    font-family: 'Amiri Quran', serif;
-    font-family: 'Reem Kufi Ink', sans-serif;
-    margin-top:10px;
-}
-
-</style>
     <script src="javascript/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
