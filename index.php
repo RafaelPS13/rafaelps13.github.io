@@ -25,12 +25,17 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
-    
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+
 </head>
 
-<body class="fundologin">
+<body>
        
-    <div class="container" style="margin-top: 90px;">
+    <div class="container" style="margin-top: 190px;">
 
         <div class="row">
             <div class="col"></div>
@@ -91,6 +96,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
         integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
     </script>
+    
+
+
+<style>
+
+  body {
+    background-image: url("img/coffe22.jpg") ;  
+}
+</style>
+
 </body>
 
 </html>

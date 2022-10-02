@@ -17,7 +17,10 @@ $(function(){
         $("#titulo_inserir").text(lista);
     }
 
-    
+});
+
+$('#Cardapio').click(function(){
+    $('#modal_a_ser_aberto').modal('show');
 });
 
 

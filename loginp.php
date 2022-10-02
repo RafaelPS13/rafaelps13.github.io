@@ -25,7 +25,7 @@
 </head>
 <body>
     
-    <div class="container" style="margin-top: 90px;">
+    <div class="container   " style="margin-top: 90px;">
 
         <div class="row">
             <div class="col"></div>
@@ -49,7 +49,7 @@
                                 <label class="form-check-label" for="exampleCheck1">Exibir senha</label>
                             </div>
 
-                            <div class="d-grid gap-2" style="margin-top: 30px; margin-bottom: 20px;">
+                            <div class="d-grid gap-2" style="margin-top: 20px; margin-bottom: 20px;">
                                 <button type="submit" class="btn btn-secondary">Entrar</button>
                             </div>
                         </form>

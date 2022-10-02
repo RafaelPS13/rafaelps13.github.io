@@ -12,16 +12,8 @@
     
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+    
 
-    <style>
-        h6{
-            margin-top: 5px;
-            margin-bottom: 5px;
-        }
-        .inserir{
-            display:"none";
-        }
-    </style>
 </head>
 <body class="paginas">
     <?php
@@ -35,7 +27,42 @@
 
     ?>
     
+    <nav class="navbar bg-light fixed-top">
+                    <div class="container-fluid">
 
+                    <div class="row">
+                        <div class="col"> <img src="img/Logo-Cafe.png" alt="" class="logo-navbar"></div>
+                        <div class="col"><h2 class="cafe" href="#">BookCoffee</h2></div>
+                    </div>
+                     
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                            aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">BookCoffee</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                        <a class="nav-link" href="#">Mesas</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Cardápio</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="index.php">Área da Gerência</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
     <div class="container">   
         <div class="row">
         
@@ -140,7 +167,7 @@
                             <select name="categorias" id="categorias">
                             <?php
 
-                                $sql = "SELECT descricao_categoria FROM CATEGORIAS";
+                                $sql = "SELECT descricao_categoria FROM categorias";
                                 $result = mysqli_query($conn, $sql);
 
                                 if (mysqli_num_rows($result) > 0) {
@@ -171,7 +198,7 @@
                             <select name="categorias" id="categorias">
                             <?php
 
-                                $sql = "SELECT descricao_categoria FROM CATEGORIAS";
+                                $sql = "SELECT descricao_categoria FROM categorias";
                                 $result = mysqli_query($conn, $sql);
 
                                 if (mysqli_num_rows($result) > 0) {
@@ -211,48 +238,54 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    
-                <table class="table">
-                    <thead>
-                        <tr>
-                        <th scope="col">cod</th>
-                        <th scope="col">nome</th>
-                        <th scope="col">valor</th>
-                        <th scope="col">categoria</th>
-                        </tr>
-                    </thead>
-                 
-                    <?php
-                        include('dados.php');
-                        $sql = "SELECT descricao_produto,v_unit_produto,categoria_produto FROM PRODUTOS";
-                        $result = mysqli_query($conn, $sql);
-                        
-                        if (mysqli_num_rows($result) > 0) {
-                          // output data of each row
-                          while($row = mysqli_fetch_assoc($result)) {?>
-                           
-
-
-                            <th scope="row">1</th>
-                            <td><?php echo $row["descricao_produto"]; ?></td>
-                            <td><?php echo $row["v_unit_produto"]; ?></td>
-                            <td><?php echo $row["categoria_produto"] ;?></td>
-                           
+                
+                <div class="    ">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                            <th scope="col">cod</th>
+                            <th scope="col">nome</th>
+                            <th scope="col">valor</th>
+                            <th scope="col">categoria</th>
                             </tr>
-            
-                           
-                         <?php }
+                        </thead>
+                    
+                        <?php
+                            include('dados.php');
+
+                            $sql = "SELECT descricao_produto,v_unit_produto,categoria_produto FROM produtos";
+                            $result = mysqli_query($conn, $sql);
+                            
+                            if (mysqli_num_rows($result) > 0) {
+                            // output data of each row
+                            while($row = mysqli_fetch_assoc($result)) {?>
+                            
+
+
+                                <th scope="row">1</th>
+                                <td><?php echo $row["descricao_produto"]; ?></td>
+                                <td><?php echo $row["v_unit_produto"]; ?></td>
+                                <td><?php echo $row["categoria_produto"] ;?></td>
+                            
+                                </tr>
+                
+                            
+                            <?php }
                         } else {
                           echo "0 results";
                         };
                         
                         mysqli_close($conn);
-                    
-                    ?>
-                  <tbody>
-                        <tr>
                         
-                    </tbody>
+                    ?>
+                    
+                </div>
+
+                <tbody>
+                    <tr>
+                    
+                </tbody>
+                
                 </table>
                 </div>
                 <div class="modal-footer">
@@ -263,20 +296,21 @@
         </div>
     </div>
 
-
-    
     <script>
         $(function(){    
    
-
             $("#produto").click(function(){
                 $("#ins-produto").css("display","block");
                 $("#ins-categoria").css("display","none");
+
+
+
             });
 
             $("#categoria").click(function(){
                 $("#ins-categoria").css("display","block");
                 $("#ins-produto").css("display","none");
+
             });
 
             $("#resposta").find(".btn-listar").click(function(){
@@ -286,6 +320,27 @@
 
     </script>
 
+<style>
+  body.paginas {
+    background-image: url("img/coffe22.jpg") ;  
+}
+.logo-navbar{
+    width:50px;
+}
+.titulo {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.cafe{
+    /* font-family: 'Reem Kufi Ink', sans-serif; */
+    font-family: 'Amiri Quran', serif;
+    font-family: 'Reem Kufi Ink', sans-serif;
+    margin-top:10px;
+}
+
+</style>
     <script src="javascript/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
