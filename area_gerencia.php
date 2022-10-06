@@ -18,6 +18,49 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi+Ink&display=swap" rel="stylesheet">
     
+    <style>
+        body.paginas {
+            background-image: url("img/coffe22.jpg");  
+        }
+        .logo-navbar{
+            width:50px;
+        }
+        .titulo {
+            margin-top: 60px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .cafe{
+            /* font-family: 'Amiri Quran', serif; */
+            font-family: 'Reem Kufi Ink', sans-serif;
+            margin-top:10px;
+            font-size: 38px;
+            color: rgb(139 69 19);
+        }
+
+        h5{
+            font-family: 'Reem Kufi Ink', sans-serif;
+            color: rgb(139 69 19);
+        }
+
+        h1{
+            font-family: 'Reem Kufi Ink', sans-serif;
+            font-size: 40px;
+            padding: 30px;
+        }
+
+        h6{
+            font-family: 'Reem Kufi Ink', sans-serif;
+
+        }
+
+        th{
+            font-family: 'Reem Kufi Ink', sans-serif;
+            font-size: 20px;
+        }
+
+    </style>
 
 </head>
 <body class="paginas">
@@ -33,41 +76,42 @@
     ?>
     
     <nav class="navbar bg-light fixed-top">
-                    <div class="container-fluid">
+        <div class="container-fluid">
 
-                    <div class="row">
-                        <div class="col"> <img src="img/Logo-Cafe.png" alt="" class="logo-navbar"></div>
-                        <div class="col"><h2 class="cafe" href="#">BookCoffee</h2></div>
-                    </div>
-                     
-                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                            aria-labelledby="offcanvasNavbarLabel">
-                            <div class="offcanvas-header">
-                                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">BookCoffee</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="offcanvas-body">
-                                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                                <li class="nav-item">
-                                        <a class="nav-link" href="#">Mesas</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Cardápio</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="index.php">Área do Atendente</a>
-                                    </li>
+        <div class="row">
+            <div class="col"><img src="img/Logo-Cafe.png" alt="" class="logo-navbar"></div>
+            <div class="col"><h2 class="cafe" href="#">BookCoffee</h2></div>
+        </div>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">BookCoffee</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Mesas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Cardápio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.php">Área do Atendente</a>
+                        </li>
 
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
     <div class="container">   
         <div class="row">
         
@@ -324,55 +368,10 @@
 
     </script>
 
-<style>
-  body.paginas {
-    background-image: url("img/coffe22.jpg") ;  
-}
-.logo-navbar{
-    width:50px;
-}
-.titulo {
-    margin-top: 60px;
-    margin-bottom: 30px;
-    text-align: center;
-}
-
-.cafe{
-    /* font-family: 'Amiri Quran', serif; */
-    font-family: 'Reem Kufi Ink', sans-serif;
-    margin-top:10px;
-    font-size: 38px;
-    color: rgb(139 69 19);
-}
-
-h5{
-    font-family: 'Reem Kufi Ink', sans-serif;
-    color: rgb(139 69 19);
-}
-
-h1{
-    font-family: 'Reem Kufi Ink', sans-serif;
-    font-size: 40px;
-    padding: 30px;
-}
-
-h6{
-    font-family: 'Reem Kufi Ink', sans-serif;
-
-}
-
-th{
-    font-family: 'Reem Kufi Ink', sans-serif;
-    font-size: 20px
-}
-
-</style>
-
     <script src="javascript/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
-<script> 
-</script>
+
 </body>
 </html>

@@ -27,7 +27,44 @@
     <!-- MDB -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css" rel="stylesheet" />
 
+    <style>
+        body.paginas {
+            background-image: url("img/coffe22.jpg");
+        }
 
+        .logo-navbar {
+            width: 50px;
+        }
+
+        .titulo {
+            margin-top: 60px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .cafe {
+            font-family: 'Amiri Quran', serif;
+            font-family: 'Reem Kufi Ink', sans-serif;
+            margin-top: 10px;
+            color: rgb(139 69 19);
+        }
+
+        .btn-group {
+            width: ;
+        }
+
+        .card {
+            height: auto;
+        }
+
+        h5 {
+            font-family: 'Reem Kufi Ink', sans-serif;
+            color: rgb(139 69 19);
+        }
+    </style>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="paginas">
@@ -567,45 +604,6 @@
             integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
         </script>
 
-        <style>
-        body.paginas {
-            background-image: url("img/coffe22.jpg");
-        }
-
-        .logo-navbar {
-            width: 50px;
-        }
-
-        .titulo {
-            margin-top: 60px;
-            margin-bottom: 30px;
-            text-align: center;
-        }
-
-        .cafe {
-            font-family: 'Amiri Quran', serif;
-            font-family: 'Reem Kufi Ink', sans-serif;
-            margin-top: 10px;
-            color: rgb(139 69 19);
-        }
-
-        .btn-group {
-            width: ;
-        }
-
-        .card {
-            height: auto;
-        }
-
-        h5 {
-            font-family: 'Reem Kufi Ink', sans-serif;
-            color: rgb(139 69 19);
-        }
-        </style>
-
-        <!-- CSS -->
-        <link rel="stylesheet" href="css/style.css">
+        
 </body>
-
-
 </html>
