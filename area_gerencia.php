@@ -326,7 +326,7 @@
 
 <style>
   body.paginas {
-    background-image: url("img/coffe21.jpg") ;  
+    background-image: url("img/coffe22.jpg") ;  
 }
 .logo-navbar{
     width:50px;

@@ -12,8 +12,6 @@
     <!-- jquery link  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-
-
     <!-- Google Fonts -->
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -571,7 +569,7 @@
 
         <style>
         body.paginas {
-            background-image: url("img/coffe21.jpg");
+            background-image: url("img/coffe22.jpg");
         }
 
         .logo-navbar {
