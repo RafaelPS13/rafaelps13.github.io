@@ -1,6 +1,6 @@
 <!-- LOGIN PRINCIPAL -->
 
-<?php  
+<?php 
     if (isset($_GET['erro_senha']) == true) {
         $erro_senha=$_GET['erro_senha'];
     } else {
@@ -9,7 +9,7 @@
 ?>
 
 <!doctype html>
-<html lang="en">
+<html lang="en">    
 
 <head>
     <meta charset="utf-8">
@@ -31,12 +31,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
 
-    <style>
-        body {
-            background-image: url("img/coffe22.jpg") ;  
-        }
-    </style>
 </head>
+
 <body>
        
     <div class="container" style="margin-top: 190px;">
@@ -100,6 +96,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
         integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
     </script>
+    
+
+
+<style>
+
+  body {
+    background-image: url("img/coffe21.jpg") ;  
+}
+</style>
 
 </body>
+
 </html>

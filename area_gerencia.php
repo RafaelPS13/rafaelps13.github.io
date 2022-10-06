@@ -12,27 +12,13 @@
     
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
-    
-    <style>
-        body.paginas {
-            background-image: url("img/coffe22.jpg") ;  
-        }
-        .logo-navbar{
-            width:50px;
-        }
-        .titulo {
-            margin-top: 60px;
-            margin-bottom: 30px;
-            text-align: center;
-        }
 
-        .cafe{
-            /* font-family: 'Reem Kufi Ink', sans-serif; */
-            font-family: 'Amiri Quran', serif;
-            font-family: 'Reem Kufi Ink', sans-serif;
-            margin-top:10px;
-        }
-    </style>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi+Ink&display=swap" rel="stylesheet">
+    
+
 </head>
 <body class="paginas">
     <?php
@@ -74,7 +60,7 @@
                                         <a class="nav-link" href="#">Cardápio</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="index.php">Área da Gerência</a>
+                                        <a class="nav-link" href="index.php">Área do Atendente</a>
                                     </li>
 
                                 </ul>
@@ -106,7 +92,7 @@
 
                         <tr>
                             <th scope="row" style="text-aling:right;">
-                                <h6>Produtos</h6>
+                                <h6>PRODUTOS</h6>
                             </th>
 
                             <td scope="row"></td>
@@ -124,7 +110,7 @@
 
                         <tr>
                             <th scope="row" style="text-aling:right;">
-                                <h6>Categorias</h6>
+                                <h6>CATEGORIAS</h6>
                             </th>
 
                             <td scope="row"></td>
@@ -142,7 +128,7 @@
                         
                         <tr>
                             <th scope="row">
-                                <h6>Atendentes</h6>
+                                <h6>ATENDENTES</h6>
                             </th>
 
                             <td scope="row"></td>
@@ -173,7 +159,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="inserirLabel">Modal title</h5>
+                    <h5 class="modal-title" id="inserirLabel">INSIRA</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -240,8 +226,8 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Understood</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-success">Inserir</button>
                 </div>
             </div>
         </div>
@@ -308,8 +294,7 @@
                 </table>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
                 </div>
             </div>
         </div>
@@ -338,6 +323,50 @@
         });
 
     </script>
+
+<style>
+  body.paginas {
+    background-image: url("img/coffe21.jpg") ;  
+}
+.logo-navbar{
+    width:50px;
+}
+.titulo {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.cafe{
+    /* font-family: 'Amiri Quran', serif; */
+    font-family: 'Reem Kufi Ink', sans-serif;
+    margin-top:10px;
+    font-size: 38px;
+    color: rgb(139 69 19);
+}
+
+h5{
+    font-family: 'Reem Kufi Ink', sans-serif;
+    color: rgb(139 69 19);
+}
+
+h1{
+    font-family: 'Reem Kufi Ink', sans-serif;
+    font-size: 40px;
+    padding: 30px;
+}
+
+h6{
+    font-family: 'Reem Kufi Ink', sans-serif;
+
+}
+
+th{
+    font-family: 'Reem Kufi Ink', sans-serif;
+    font-size: 20px
+}
+
+</style>
 
     <script src="javascript/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
