@@ -35,7 +35,7 @@
 
 <body>
        
-    <div class="container" style="margin-top: 150px;">
+    <div class="container" style="margin-top: 190px;">
 
         <div class="row">
             <div class="col"></div>
@@ -47,11 +47,11 @@
 
                     <form action="processar_login.php" method="post" style="margin-top:25px; width:320px;">
                         <div class="mb-3">
-                            <label for="usuario" class="form-label" style="font-weight: 500;">Usuario</label>
+                            <label for="usuario" class="form-label">Usuario</label>
                             <input type="text" class="form-control" name="usuario" id="usuario">
                         </div>
                         <div class="mb-3">
-                            <label for="senha" class="form-label" style="margin-top:5px; font-weight: 500;">Senha</label>
+                            <label for="senha" class="form-label" style="margin-top:5px;">Senha</label>
                             <input type="password" class="form-control" name="senha" id="senha">
                         </div>
                         <div class="mb-3 form-check">
@@ -59,7 +59,7 @@
                             <label class="form-check-label" for="exampleCheck1">Exibir senha</label>
                         </div>
 
-                        <div class="d-grid gap-2" style="margin-top: 30px; margin-bottom: 10px;">
+                        <div class="d-grid gap-2" style="margin-top: 35px; margin-bottom: 10px;">
                             <button type="submit" class="btn btn-secondary">Entrar</button>
                         </div>
                     </form>
@@ -102,7 +102,7 @@
 <style>
 
   body {
-    background-image: url("img/coffe22.jpg") ;  
+    background-image: url("img/coffe21.jpg") ;  
 }
 </style>
 

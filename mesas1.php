@@ -290,7 +290,7 @@
 
         <style>
         body.paginas {
-            background-image: url("img/coffe22.jpg");
+            background-image: url("img/coffe21.jpg");
         }
 
         .logo-navbar {
